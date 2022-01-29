@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Waterfall&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" class="rel">
+    
+    <title>Walentynki w Ekonomiku</title>
+</head>
+
+<body>
+
+    <header class="gora"> 
+        Walentynki 2022 w Ekonomiku
+    </header>
+    
+    <div class="odczyt"><form name="odczyt"><input type="text" name="kodwalentynki" placeholder="Podaj swój kod Walentynki"></input> <input type="button" value="Odczytaj" onclick="JSONtoDiv()"></form></div>
+<section>
+
+    <div class="lovefoto">
+      <img src="images/serce.jpg" class="serce"> 
+    </div>
+
+    <div class="srodek" id="trescwalentynki">
+        <form name="walentynka" action="dodajWalentynke.php" method="post"> 
+            <p>Stwórz swoją Walentynkę</p>
+            <textarea rows="10" cols="150" type="text" name="tresc" class="tresc" placeholder="Tu wpisz to co Ci na sercu leży "></textarea>
+            <p>Komu chcesz ją wysłać?</p>
+            <input type="text" name="adresat" size="70" placeholder="Imię i nazwisko adresata / adresatki">
+            <input type="text" name="klasa" size="10" placeholder="Z której klasy?">
+            <br>
+            <input type="text" name="nadawca" size ="20" placeholder="Podpisz się jakoś">
+            <input type="hidden" name="nazwaStrony" value="" />
+            <input type="submit" name="submit" value="Wyślij">
+        </form>
+    </div>
+</section> 
+
+<footer>
+    <p id="autor">Projekt Walentynki 2022 na zajęciach programistycznych w Ekonomiku przygotowali: Aleksandra Hamera, Emilia Marciniak, Bartosz Kusiak.</p>
+</footer>
+
+</body>
+<script src="czytajWalentynke.js"></script>
+<script src='generujKodWalentynki.js'></script>
+</html>

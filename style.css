@@ -1,0 +1,63 @@
+body{
+    background-color: floralwhite;
+}
+
+header.gora { 
+    font-family: 'Waterfall', cursive;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    background-color: palevioletred; 
+    height: 50px;
+    position: fixed;
+}
+
+div.odczyt {
+    width:20%;
+    /* display: block; */
+    float: right;
+    text-align: center;
+    padding-top: 60px;
+}
+
+img.serce {
+    display: block;
+    margin: 20px auto; 
+}
+
+div.lovefoto { 
+    width: 100%; 
+    background-color:floralwhite; 
+    display: inline-block;
+}
+
+div.srodek { 
+    width: 100%;
+    background-color:palevioletred; 
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+    div.srodek p {padding: 0; margin: 0;}
+
+    div.pokazwalentynke {
+    width: 100%;
+    font-family: 'Waterfall';
+    font-size: 50px;
+}
+    div.pokazwalentynke p#adresatw {text-align: left; padding-left: 7rem;}
+    div.pokazwalentynke p#trescw {text-align: center; padding: 0 7rem;}
+    div.pokazwalentynke p#nadawcaw {text-align: right; padding-right: 7rem;}
+
+footer {
+    text-align: center;
+    width: 100%;
+    background-color: palevioletred;
+    height: 30px;
+}
+
+    footer p {
+        display: block;
+        line-height: 30px;
+    }
